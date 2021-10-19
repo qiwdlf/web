@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="잉잉잉잉잉">
+        <meta name="keywords" content="잉,잉잉,이ㅣㅣㅣㅣ,잉">
+        <meta name="viewport" content="width=device-width">
+        <title>잉잉</title>
+        <style>
+            a{
+                color: royalblue;
+            };
+        </style>
+        <script>
+            let link = {
+                color:             function linkcolor(color){
+                let link = document.querySelectorAll(`a`);
+                var i = 0;
+                while(i < link.length){
+                link[i].style.color = color;
+                i = i + 1;
+                };
+            }
+        };
+
+            let Body = {
+                backcolor: function backcolor(color){
+                document.querySelector(`body`).style.backgroundColor = color;
+                },
+                color: function color(color){
+                    document.querySelector(`body`).style.color = color;
+                }
+            };
+
+
+            function brt(name){
+                if(name.value === `black`){
+                    Body.backcolor(`black`);
+                    Body.color(`white`);
+
+                    link.color(`lightcoral`);
+
+                name.value = 'white';
+                }else{
+                    Body.backcolor(`white`);
+                    Body.color(`black`);
+
+                    link.color(`royalblue`);
+
+                name.value = `black`;
+                };
+            };
+        </script>
+    </head>
+<body>
+ <div style="display: flex;">
+        <!--h(n)는 콘텐츠에 대제목,중제목,소제목에 쓰인다
+            h1~h6까지 있다 숫자가 적을수록 중요한 의미를 갖게된다
+            h1은 하나의 문서에서 한 번만 사용
+            h1 태그부터 순차적으로 사용해야된다
+        -->
+        <div>
+        <h1 style="background-color: chartreuse;color: cornflowerblue;">잉잉</h1>
+
+        <!--p는 문서의 내용을 넣을때 사용하는 태그
+            공백은 최대 1칸 1칸 보다 더 뛰고싶을떈
+            &nbsp;를 사용
+            br은 줄바꿈 할때 사용
+        -->
+        <p>잉잉&nbsp; &nbsp;잉잉잉잉잉<br>잉잉잉잉잉잉잉잉잉잉</p>
+
+        <!--외부 링크
+            target="-blank"를 사용하지 않으면 내가 보고있는 
+            웹 문서에서 페이지를 이동함
+            target="-blank"를 사용하면 새 탭으로 페이지를 이동함
+        -->
+        <a href="https://www.naver.com/" target="-blank" title="네이버 바로가기">mmm</a>
+        
+        <!--img는 이미지를 삽입할 때 사용하는 태그다-->
+        <img src="./공부/공부1/비오는 날.jpg" alt="사진" width="100" height="160" title="우산">
+        <br>
+        <!--strong은 중요한 텍스트를 표시할 때 사용-->
+        <strong>잉잉잉</strong>
+        <br>
+        <!--em은 텍스트를 강조할 때 사용-->
+        <em>잉잉잉</em>
+        <br>
+        <!--b는 텍스트를 굵게 만들때 사용-->
+        <b>잉잉잉</b>
+        <br>
+        <!--i는 텍스트를 기울일때 사용-->
+        <i>잉잉잉</i>
+    </div>
+        <!--ul은 비순서형 목록 태그-->
+        <div>
+        <ul>
+            <li>잉잉잉</li>
+            <li>잉잉잉</li>
+        </ul>
+
+        <!--ol은 순서형 목록 태그-->
+        <ol>
+            <li>잉잉잉</li>
+            <li>잉잉잉</li>
+        </ol>
+
+        <!--dl은 정의형 목록 태그-->
+        <dl>
+            <dt>잉잉잉</dt>
+            <dd>잉잉잉</dd>
+        </dl>
+        <!--u는 밑줄을 칠때 사용-->
+        <u>중요한 내용</u>
+    </div>
+<br>
+<!--<input type="text">입력창을 만들때 쓰는 코드 속성 값으론 password,time,text,
+    datetime-local,checkbox,week,range,search-->
+    <div>
+        <input type="text">
+        <table border="4">
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>성별</th>
+            </tr>
+            <tr>
+                <td>빵빵이</td>
+                <td>345살</td>
+                <td>중성</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+    <h2>로그인 창</h2>
+    <form>
+     <input type="email" style="font-size: 25px;">
+<br>
+     <input type="password" style="font-size: 25px;">
+     <input type="submit" style="font-size: 15px;">
+
+     <select name="Corporation">
+         <option value="1">google</option>
+         <option value="2">naver</option>
+         <option value="3">youtube</option>
+     </select>
+    </form>
+    </div>
+</div>
+<input type="button" value="Don't click" style="font-size: 40px;" onclick="alert('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')">
+<input type="text" onchange="alert('hi hi hi')">
+<input type="text" style="font-size: 20px;" onkeydown="alert('난 네가 글을 쓰는거나 지우는 걸 방해할 거야')">
+
+
+<div>
+<input type="button" value="파랑" style="font-size: 30px;" onclick="
+document.querySelector('body').style.backgroundColor = `blue`;
+document.querySelector('body').style.color = `red`;">
+<input type="button" value="하양" style="font-size: 30px;" onclick="
+document.querySelector('body').style.backgroundColor = `white`
+document.querySelector('body').style.color = `black`">
+</div>
+
+
+<input id="black_white" type="button" value="검정" onclick="
+  if(document.querySelector('#black_white').value === `검정`){
+      document.querySelector('body').style.backgroundColor = `black`;
+      document.querySelector('body').style.color = `white`;
+      document.querySelector('#black_white').value = `하양`;
+  }else{
+      document.querySelector('body').style.backgroundColor = `white`;
+      document.querySelector('body').style.color = `black`;
+      document.querySelector('#black_white').value = `검정`;
+};
+">
+
+<input type="button" value="검정" onclick="
+ var color = document.querySelector('body');
+  if(this.value === `검정`){
+      color.style.backgroundColor = `black`;
+      color.style.color = `white`;
+      this.value = `하양`;
+  }else{
+      color.style.backgroundColor = `white`;
+      color.style.color = `black`;
+      this.value = `검정`;
+};
+">
+
+
+<script>
+    var name = "jihu";
+    document.write("0000"+name+"0000000000"+name+"00000000")
+</script>
+<script>
+    var leyt = ["lemon", 'apple'];
+    document.write(leyt.length);
+</script> 
+
+
+<h1>반복문</h1>
+<ul>
+<script>
+    var i = 0;
+    
+    document.write("<li>1</li>");
+    while( i < 4){
+  document.write("<li>2</li>");
+  document.write("<li>3</li>");
+  i = i + 1;
+};
+    document.write("<li>4</li>");
+</script>
+</ul>
+
+
+
+<ul>
+    <script>
+        var hjgh = ['all', 'bll', `cll`, `dll`, `ell`];
+        var i = 0;
+        while(i < hjgh.length){
+            document.write('<li><a href="https://www.naver.com/">'+hjgh[i]+'</a></li>');
+            i = i + 1;
+        };
+    </script>
+</ul>
+
+<br>
+
+<ul>
+<li><a href="https://www.naver.com">바나나</a></li>
+<li><a href="https://www.naver.com">사과</a></li>
+<li><a href="https://www.naver.com">복숭아</a></li>
+<li><a href="https://www.naver.com">감</a></li>
+</ul>
+
+<input type="button" value="black" onclick="
+let you = document.querySelector(`body`);
+if(this.value === `black`){
+    you.style.backgroundColor = 'black';
+    you.style.color = `white`;
+
+let link = document.querySelectorAll(`a`);
+var i = 0;
+while(i < link.length){
+link[i].style.color = `lightcoral`;
+i = i + 1;
+};
+
+    this.value = 'white';
+}else{
+    you.style.backgroundColor = 'white';
+    you.style.color = `black`;
+
+let link = document.querySelectorAll(`a`);
+var i = 0;
+while(i < link.length){
+link[i].style.color = `royalblue`;
+i = i + 1;
+};
+
+    this.value = `black`;
+};
+">
+
+<script>
+    function fn(){
+        document.write('<br>'+`hi`);
+    };
+    fn();
+</script>
+
+<script>
+    function Parameters(name){
+        document.write(name);
+    };
+    Parameters('<br>'+`ing ing`);
+</script>
+
+<script>
+    function ret(num1,num2){
+        return num1 + num2;
+    };
+    document.write(`<br>`+`<div style="color: red;">`+ret(3,4)+'</div>');
+    document.write(`<div style="font-size: 30px;">`+ret(5,4)+'</div>');
+</script>
+
+<input type="button" value="black" onclick="brt(this);">
+<input type="button" value="black" onclick="brt(this);">
+<input type="button" value="black" onclick="brt(this);">
+
+<script>
+    let score = {
+        ko: 100,
+        lo: 20,
+        ty: 76
+    };
+    for(var key in score){
+        document.write("<br>" + key + `:` + score[key]);
+    };
+
+    let ropo = ["dddd", "bbbb", 19000, 566767];
+    var i = 0;
+    while(i < ropo.length){
+        document.write('<br>' + ropo[i]);
+        i = i + 1;
+    };
+</script>
+<script>
+    let ryu = {
+        simdol: function(name){
+            console.log(name);
+        }
+    };
+    ryu.simdol(`dog`);
+
+ryu.hgf = function(){
+    code
+}
+console.log(ryu.hgf);
+
+</script>
+</body>
+</html>
